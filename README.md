@@ -1,2 +1,2 @@
-Estudo do Segundo Trimestre
+# Estudo do Segundo Trimestre
 Nicole Fernandes Bastiani - 29
