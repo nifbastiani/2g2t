@@ -1,0 +1,45 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.preta {
+    background-color: black;
+    height: 20vh;
+    grid-area: preta;
+}
+.amarela {
+    background-color: rgb(234, 238, 14);
+    height: 70vh;
+    grid-area: amarela;
+}
+.roxa {
+    background-color: rgb(146, 11, 224);
+    height: 35vh;
+    grid-area: roxa;
+}
+.cinza {
+    background-color: rgb(43, 39, 39);
+    height: 70vh;
+    grid-area: cinza;
+}
+.azul {
+    background-color: rgb(55, 66, 221);
+    height: 35vh;
+    grid-area: azul;
+}
+.vermelho {
+    background-color: rgb(155, 28, 28);
+    height: 10vh;
+    grid-area: vermelho;
+}
+.site {
+display: grid;
+grid-template-columns: 10% 20% 70%;
+grid-template-areas: 
+"preta preta preta"
+"amarela azul cinza" 
+"amarela roxa cinza"
+"vermelho vermelho vermelho"
+;
+}
