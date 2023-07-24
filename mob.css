@@ -13,8 +13,8 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
+ul {    width: 100%;
+    height: 60px;
 }
 
 .header {
@@ -43,6 +43,11 @@ background-color: var(--fundo);
     color: var(--cor-fonte);
 }
 
+.menu a:hover{
+    background-color: var(--cor-hover);
+
+}
+
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
@@ -59,7 +64,7 @@ background-color: var(--fundo);
     display: block;
     height: 2px;
     position: relative;
-    width: 23px;
+    width: 24px;
 }
 
 .hamb-line::before,
@@ -144,21 +149,23 @@ background-color: var(--fundo);
 }
 
 @media screen and (min-width: 768px) {
-    .menu {
-        height: 120px;
-        background-color:rgb(117, 230, 95);
-    }
-    .conteudo{
-        display: flex;
-    }
-}
+   .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+   }
 
-@media screen and (min-width: 1028px){
-    .menu {
-        height: 200px;
-        background-color: black;
-    }
-    .conteudo{
-        display: grid;
-    }
+   .menu li {
+    float: left;
+   }
+   .manu a:hover {
+    background-color: transparent;
+    color: var(--cor-hover);
+   }
+   .hamb {
+    display: none;
+   }
 }
