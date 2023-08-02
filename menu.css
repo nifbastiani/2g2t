@@ -1,44 +1,37 @@
-:root{
-    --fundo: rgb(59, 150, 50);
-    --fonte: black;
-    --hover: rgb(42, 228, 83);
+:root {
+    --fundo: rgb(247, 217, 162);
+    --fonte: white;
+    --hover: yellowgreen;
 }
-
-a{
-            text-decoration: none;
+a {
+    text-decoration: none;
 }
-
-ul{
+ul {
     list-style: none;
 }
-
-.header{
-    background-color: var(--fundo);
+.header {
+    background-color: rgb(184, 152, 93);    
     position: sticky;
     top: 0;
     width: 100vw;
 }
-
-.logo{
+.logo {
     display: inline-block;
     color: var(--fonte);
     font-size: 48px;
 }
-
-.nav{
+.nav {
     width: 100vw;
     height: 100vh;
     position: fixed;
     background-color: var(--fundo);
     overflow: hidden;
 }
-
-.menu a{
+.menu a {
     display: block;
     padding: 30px;
     color: var(--fonte);
 }
-
-.menu a:hover{
+.menu a:hover {
     background-color: var(--hover);
 }
